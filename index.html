@@ -7,9 +7,11 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <li class="header-logo">
-            <img src="" alt="Город Седона">
-        </li>
+        <div class="header-logo">
+          <a class="header-logo-link">
+            <img class="city-logo" src="#" alt="Город Седона">
+          </a>
+        </div>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a href="index.html">Главная</a>
@@ -33,22 +35,20 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-search">
-          <li class="navigation-item"><button class="button-navigation">ХОЧУ СЮДА!</button>
-          </li>
-        </ul>
+        <div class="navigation-item"><button class="button-navigation">Хочу сюда!</button>
+        </div>
       </nav>
     </header>
 
     <main class="main-index">
-      <section>
+      <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="welcome-image" src="" width="458" height="352" alt="Добро пожаловать в Седону">
       </section>
-      <section class="advantages">
-        <h2>Седона - небольшой городок в Аризоне,<br>
+      <section class="intro">
+        <h2 class="intro-short">Седона - небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        <p class="intro-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </section>
       <section class="advantages-city">
           <h3 class="advantages-title">Настоящий<br>
@@ -56,8 +56,8 @@
           <p class="advantages-description"> — №1 — <p>
           <p class="advantages-description">Седона — не аттракцион для туристов,<br>
             там течёт своя жизнь</p>
-          <div>
-            <img src="" width="800" height="384" alt="Вид города">
+          <div class="city-picture">
+            <img class="city-view" src="" width="800" height="384" alt="Вид города">
           </div>
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -84,8 +84,8 @@
         <p class="advantages-description">Да, по нему можно пройти!<br>
         Если вы осмелитесь,<br>
         разумеется</p>
-        <div>
-          <img src="" width="800" height="384" alt="Фото каньона">
+        <div class="canyon-picture">
+          <img class="canyon-view" src="" width="800" height="384" alt="Фото каньона">
         </div>
       </section>
       <section class="advantages-common">
@@ -114,7 +114,7 @@
         </ol>
       </section>
       <section>
-        
+
       </section>
       </main>
   </body>
