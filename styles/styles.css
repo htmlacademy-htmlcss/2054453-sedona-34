@@ -19,12 +19,11 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
 }
 
 .button-navigation {
-    font-family: 'PT Sans';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -34,8 +33,7 @@ body {
 }
 
 .search-hotels-button {
-    font-family: 'PT Sans';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -45,8 +43,7 @@ body {
 }
 
 .newsletter-button {
-    font-family: 'PT Sans';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -56,8 +53,7 @@ body {
 }
 
 .button-apply {
-    font-family: 'PT Sans';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -67,15 +63,14 @@ body {
 }
 
 .button-reset {
-    font-family: 'PT Sans';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
 }
 
 .catalog-newsletter-button {
-    font-family: 'PT Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -116,12 +111,14 @@ body {
 
 .main-index {
     text-align: center;
+    background-color: #ffffff;
 }
 
 .welcome {
     background-image: url("../images/welcome-background.jpg"), url("../images/diveder.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #F5F5F5;
 }
 
 .intro-short {
@@ -146,13 +143,8 @@ body {
 }
 
 .advantages-description {
-    font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
-}
-
-.advantages-description-number {
-    color: #000000;
+    color: #333333;
 }
 
 .advantages-city-true {
@@ -207,6 +199,7 @@ body {
     background-image: url("../images/subscribe-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #F5F5F5;
 }
 
 .newsletter-title {
@@ -219,6 +212,10 @@ body {
 
 /*Footer*/
 
+.page-footer {
+    background-color: #ffffff;
+}
+
 .contacts-phone-link {
     text-decoration: none;
     color: #000000;
@@ -228,10 +225,15 @@ body {
 
 /*Catalog*/
 
+.main-inner {
+    background-color: #FFFFFF;
+}
+
 .catalog-hotels {
-    background-image: url(../images/catalog/filter-background.jpg);
+    background-image: url("../images/catalog/filter-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #F5F5F5;
     color: #FFFFFF;
 }
 
