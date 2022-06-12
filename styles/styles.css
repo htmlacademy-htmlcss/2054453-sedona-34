@@ -71,15 +71,23 @@ body {
     line-height: 20px;
 }
 
-.catalog-newsletter-button {
+.product-card-button {
     font-family: inherit;
-    font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #82B3D3;
+    background-color: #756157;
+}
+
+.product-card-button-fav {
+    background-color: #82B3D3;
+}
+
+.product-card-button-selected {
+    background-color: #7DB54F;
 }
 
 .visually-hidden {
