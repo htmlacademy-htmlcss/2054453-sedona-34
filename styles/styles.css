@@ -14,13 +14,49 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
-    background-color: #F2F2F2;
+    background-color: #E5E5E5;
+    height: 100%;
 }
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
 
 /*Buttons*/
 
@@ -90,24 +126,27 @@ body {
     background-color: #7DB54F;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 /*Header*/
 
 .page-header {
     color: #000;
     background: #ffffff;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+}
+
+.navigation-list {
+    margin: 0 0 0 30px;
+    padding: 0;
+    width: 500px;
+}
+
+.navigation-user {
+    width: 300px;
+    margin-left: auto;
 }
 
 .navigation-link {
@@ -125,7 +164,10 @@ body {
 
 .main-index {
     text-align: center;
-    background-color: #ffffff;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .welcome {
@@ -133,6 +175,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F5F5F5;
+}
+
+.welcome-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.intro {
+    margin: 0 auto;
+    width: 1200px;
 }
 
 .intro-short {
@@ -144,6 +196,50 @@ body {
 .intro-reasons {
     font-weight: 400;
     color: #333333;
+}
+
+.advantages-city {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-city-true {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 0 85px;
+}
+
+.advantages-sublist {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item {
+    width: 400px;
+    padding: 0 85px;
+}
+
+.advantages-canyon {
+    display: flex;
+    align-items: stretch;
+}
+
+.advantages-list {
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .advantages-title {
@@ -159,11 +255,12 @@ body {
     color: #333333;
 }
 
-.advantages-city-true {
-    font-size: 18px;
-    line-height: 21px;
+.advantages-description-city {
     color: #FFFFFF;
-    background-color: #82B3D3;
+}
+
+.advantages-description-bridge {
+    color: #FFFFFF;
 }
 
 .advantages-item-house {
@@ -179,6 +276,11 @@ body {
     line-height: 21px;
     color: #FFFFFF;
     background-color: #82B3D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 0 85px;
 }
 
 .advantages-item-area {
@@ -205,7 +307,7 @@ body {
     text-transform: uppercase;
 }
 
-.search-hotel-data {
+.search-hotels-data {
     font-weight: 400;
     color: #333333;
 }
@@ -229,17 +331,44 @@ body {
 /*Footer*/
 
 .page-footer {
-    background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.page-footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.contacts-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 237 0 0;
+    padding: 0;
+    width: 192;
+    list-style: none;
+}
+
+.contacts-phone {
+    width: 331px;
+    margin: 0 auto;
 }
 
 .contacts-phone-link {
+    display: block;
     text-decoration: none;
     color: #000000;
     font-size: 40px;
     line-height: 40px;
 }
 
-/*Catalog*/
+.contacts-logo {
+    margin: 0 0 0 auto;
+}
+
+/* Catalog */
 
 .main-inner {
     background-color: #FFFFFF;
@@ -251,6 +380,38 @@ body {
     background-size: cover;
     background-color: #F5F5F5;
     color: #FFFFFF;
+    width: 1060px;
+    padding: 0 70px;
+}
+
+.sorting-settings {
+    display: flex;
+    width: 1057px;
+    margin: 0 71px 0 72px;
+}
+
+.product-list-container {
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.pages-settings {
+    display: flex;
+    margin: 0 72px;
+    justify-content: space-between;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.qty-pages {
+    display: flex;
+    align-items: center;
 }
 
 .inner-header-title {
@@ -324,6 +485,7 @@ body {
 }
 
 .catalog-newsletter {
+    text-align: center;
     color: #333333;
 }
 
