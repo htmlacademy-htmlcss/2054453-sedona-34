@@ -175,6 +175,8 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F5F5F5;
+    width: 1200px;
+    height: 485px;
 }
 
 .welcome-image {
@@ -191,11 +193,13 @@ img {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    padding: 0 286px;
 }
 
 .intro-reasons {
     font-weight: 400;
     color: #333333;
+    padding: 0 271px;
 }
 
 .advantages-city {
@@ -301,6 +305,10 @@ img {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+.search-hotels {
+    padding: 0 240px;
+}
+
 .search-hotels-title {
     font-size: 30px;
     line-height: 36px;
@@ -319,6 +327,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F5F5F5;
+    padding: 0 200px;
 }
 
 .newsletter-title {
@@ -338,22 +347,25 @@ img {
 
 .page-footer-container {
     display: flex;
-    justify-content: space-between;
-    padding: 0 70px;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.contacts-social {
+    min-width: 142;
+    margin-right: auto;
 }
 
 .contacts-social-list {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 237 0 0;
+    margin: 0;
     padding: 0;
-    width: 192;
     list-style: none;
 }
 
 .contacts-phone {
-    width: 331px;
-    margin: 0 auto;
+    width: 720px;
+    margin-right: auto;
 }
 
 .contacts-phone-link {
@@ -365,7 +377,7 @@ img {
 }
 
 .contacts-logo {
-    margin: 0 0 0 auto;
+    width: 115px;
 }
 
 /* Catalog */
@@ -487,6 +499,7 @@ img {
 .catalog-newsletter {
     text-align: center;
     color: #333333;
+    padding: 0 200px;
 }
 
 .catalog-newsletter-title {
