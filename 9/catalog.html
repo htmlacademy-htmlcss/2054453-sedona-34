@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="stylesheet" href="./styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2054453-sedona-34/9/">
 </head>
@@ -63,7 +64,8 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <svg class="home-page-icon" aria-hidden="true" focusable="false" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="home-page-icon" aria-hidden="true" focusable="false" width="13" height="13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z">
                     </path>
@@ -72,7 +74,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -86,21 +88,21 @@
                   <label class="control">
                     <input class="control-input" type="checkbox" name="pool" checked>
 
-                    Бассейн
+                    <span>Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="parking-space" checked>
 
-                    Парковка
+                    <span>Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="wi-fi">
 
-                    Wi-Fi
+                    <span>Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -113,28 +115,28 @@
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="hotel" checked>
 
-                    Гостиница
+                    <span>Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="motel">
 
-                    Мотель
+                    <span>Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="apartments">
 
-                    Апартаменты
+                    <span>Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
             <div class="catalog-filter-buttons">
-              <button class="button button-apply" type="submit">Применить</button>
+              <button class="button button-apply button-b" type="submit">Применить</button>
               <button class="button button-reset" type="reset">Сбросить</button>
             </div>
           </form>
@@ -150,19 +152,19 @@
                 <option value="popular">Сначала популярные</option>
               </select>
             </div>
-            <ul class="catalog-view-button">
-              <li class="view-button-item">
-                <a class="button" href="#">
+            <ul class="card-view-list">
+              <li class="card-view-item">
+                <a class="view-button view-button-table view-button-current" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
-              <li class="view-button-item">
-                <a class="button button-light" href="#">
+              <li class="card-view-item">
+                <a class="view-button view-button-slide" href="#">
                   <span class="visually-hidden">Показать слайд</span>
                 </a>
               </li>
-              <li class="view-button-item">
-                <a class="button button-light" href="#">
+              <li class="card-view-item">
+                <a class="view-button view-button-list" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -180,7 +182,7 @@
                 <span class="product-type">Гостиница</span>
                 <span class="product-card-price">От 4000 ₽</span>
                 <a class="button product-card-button-about" href="#">Подробнее</a>
-                <button class="button product-card-button-fav" type="submit">В избранное</button>
+                <button class="button product-card-button-fav button-b" type="submit">В избранное</button>
                 <div class="stars-four">
                   <span class="visually-hidden">4 звезды</span>
                 </div>
@@ -214,7 +216,7 @@
                 <span class="product-type">Гостиница</span>
                 <span class="product-card-price">От 2500 ₽</span>
                 <a class="button product-card-button-about" href="#">Подробнее</a>
-                <button class="button product-card-button-fav" type="submit">В избранное</button>
+                <button class="button product-card-button-fav button-b" type="submit">В избранное</button>
                 <div class="stars-three">
                   <span class="visually-hidden">3 звезды</span>
                 </div>
@@ -231,7 +233,7 @@
                 <span class="product-type">Гостиница</span>
                 <span class="product-card-price">От 1500 ₽</span>
                 <a class="button product-card-button-about" href="#">Подробнее</a>
-                <button class="button product-card-button-fav" type="submit">В избранное</button>
+                <button class="button product-card-button-fav button-b" type="submit">В избранное</button>
                 <div class="stars-two">
                   <span class="visually-hidden">2 звезды</span>
                 </div>
@@ -283,7 +285,7 @@
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter email" id="newsletter-email"
               required>
-            <button class="button newsletter-button">Подписаться</button>
+            <button class="button newsletter-button button-b">Подписаться</button>
           </form>
         </section>
       </main>

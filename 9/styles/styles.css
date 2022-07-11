@@ -62,6 +62,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+  background-color: #756157;
   display: block;
   border-radius: 4px;
   border: none;
@@ -70,15 +71,31 @@ body {
   cursor: pointer;
 }
 
-.button-navigation {
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
+.button-navigation {
   width: 160px;
 }
 
 .search-hotels-button {
   font-size: 20px;
   line-height: 36px;
-  background-color: #756157;
   width: 574px;
   margin: 0 auto;
   padding: 12px 0;
@@ -103,13 +120,33 @@ body {
 .button-reset {
   font-weight: 400;
   text-transform: none;
-  text-align: center;
+  padding: 0;
   background-color: transparent;
   border: none;
+  }
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
 }
 
-.product-card-button-about {
-  background-color: #756157;
+.button-reset:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+  outline-offset: 2px;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+}
+
+.button-reset:disabled {
+  color: #000000;
+  background-color: transparent;
+  cursor: none;
 }
 
 .product-card-button-fav {
@@ -118,6 +155,42 @@ body {
 
 .product-card-button-selected {
   background-color: #7DB54F;
+}
+
+.product-card-button-selected:hover {
+  background-color: #6c9e42;
+}
+
+.product-card-button-selected:focus {
+  background-color: #6c9e42;
+}
+
+.product-card-button-selected:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.product-card-button-selected:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
+.button-b:hover {
+  background-color: #68a2ca;
+}
+
+.button-b:focus {
+  background-color: #68a2ca;
+}
+
+.button-b:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-b:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /*Header*/
@@ -178,6 +251,23 @@ body {
   background-color: inherit;
 }
 
+.navigation-link-current {
+  border-bottom: 4px solid #756257;
+  padding-bottom: 17px;
+}
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -186,6 +276,18 @@ body {
   left: 0;
   margin: auto;
   fill: #000000;
+}
+
+.navigation-link:hover .navigation-icon {
+  fill: #756157;
+}
+
+.navigation-link:focus .navigation-icon {
+  fill: #756157;
+}
+
+.navigation-link:active .navigation-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .user-item {
@@ -473,6 +575,18 @@ body {
   position: relative;
 }
 
+.contacts-social-link:hover .social-icon {
+  fill: #68a2ca;
+}
+
+.contacts-social-link:focus .social-icon {
+  fill: #68a2ca;
+}
+
+.contacts-social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .social-icon {
   position: absolute;
   margin: auto;
@@ -491,6 +605,18 @@ body {
   line-height: 40px;
 }
 
+.contacts-phone-link:hover {
+  color: #756157;
+}
+
+.contacts-phone-link:focus {
+  color: #756157;
+}
+
+.contacts-phone-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .contacts-logo-link {
   display: block;
   width: 115px;
@@ -500,6 +626,18 @@ body {
 
 .contacts-logo-icon {
   fill: #000000;
+}
+
+.contacts-logo-link:hover .contacts-logo-icon {
+  fill: #756157;
+}
+
+.contacts-logo-link:focus .contacts-logo-icon {
+  fill: #756157;
+}
+
+.contacts-logo-link:active .contacts-logo-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Catalog */
@@ -519,7 +657,7 @@ body {
 }
 
 .product-list-wrapper {
-  padding: 50px 70px 25px;
+  padding: 50px 71px 25px 73px;
 }
 
 .sorting-container {
@@ -631,8 +769,21 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  color: #FFFFFF;
   text-decoration: none;
   display: block;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .home-page-icon {
@@ -643,6 +794,22 @@ body {
   right: 0;
   left: 2px;
   fill: #ffffff;
+}
+
+.breadcrumbs-link svg {
+  fill: #ffffff;
+}
+
+.breadcrumbs-link:hover svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus svg {
+  fill: #ffffff;
+}
+
+.breadcrumbs-link:active svg {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter {
@@ -657,6 +824,7 @@ body {
 }
 
 .catalog-filter-title {
+  font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
   margin: 0 0 30px 0;
@@ -711,7 +879,7 @@ body {
   position: relative;
 }
 
-.catalog-view-button {
+.card-view-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -721,8 +889,46 @@ body {
   list-style-type: none;
 }
 
-.view-button-item {
+.card-view-item {
   margin: 5px 8px 5px 0;
+}
+
+.view-button {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.view-button-current {
+    border-color: #000000;
+  }
+
+  .view-button:hover {
+    border-color: #000000;
+  }
+
+  .view-button:focus {
+    border-color: #68a2ca;
+  }
+
+  .view-button:active {
+    border-color: #000000;
+  }
+
+.view-button-table {
+  background: url("../images/catalog/icon-table.svg") no-repeat 50% 50%;
+}
+
+.view-button-slide {
+  background: url("../images/catalog/icon-slideshow.svg") no-repeat 50% 50%;
+}
+
+.view-button-list {
+  background: url("../images/catalog/icon-list.svg") no-repeat 50% 50%;
 }
 
 .product-card {
@@ -740,6 +946,19 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+.product-card-link:hover .product-card-title {
+  color: #756157;
+}
+
+.product-card-link:focus .product-card-title {
+  color: #756157;
+}
+
+.product-card-link:active .product-card-title {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 
 .product-card-image {
   display: block;
@@ -832,6 +1051,18 @@ body {
   color: #000000;
   background-color: #F2F2F2;
   border: none;
+}
+
+.pagination-link:not(.pagination-current):hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:not(.pagination-current):focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:not(.pagination-current):active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .total-qty {
