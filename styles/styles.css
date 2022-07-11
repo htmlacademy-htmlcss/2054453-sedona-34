@@ -849,9 +849,56 @@ body {
 
 .control {
   display: block;
-  /*padding-left: 39px;*/
+  padding-left: 39px;
   position: relative;
   cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  top: 5px;
+  left: 4px;
+  background-image: url("../images/catalog/tick.svg");
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+.control:hover .control-input[type="checkbox"] + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus-within .control-input[type="checkbox"] + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-input[type="checkbox"] + .control-mark {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .group-type-house {
@@ -892,7 +939,7 @@ body {
   background-color: transparent;
   border: 2px solid #ffffff;
   box-sizing: border-box;
-  padding: 14px 40px 14px 19px;
+  padding: 14px 40px 14px 18px;
   appearance: textfield;
 }
 
