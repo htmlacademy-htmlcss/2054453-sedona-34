@@ -172,13 +172,11 @@
         <section class="product-list-wrapper">
           <div class="sorting-container">
             <h2 class="sorting-title">Найдено гостиниц: 38</h2>
-            <div class="sorting-select-container">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="popular">Сначала популярные</option>
-              </select>
-            </div>
+            <select class="select-control select-by-type" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
             <ul class="card-view-list">
               <li class="card-view-item">
                 <a class="view-button view-button-table view-button-current" href="#">
@@ -292,14 +290,12 @@
             </ul>
 
             <div class="select-qty-container">
-              <label class="select-description" for="select-qty">Гостиниц на странице:</label>
-              <div class="inner-select-container">
-                <select class="qty-control" name="qty" id="select-qty">
-                  <option value="4">4</option>
-                  <option value="8">8</option>
-                  <option value="12">12</option>
-                </select>
-              </div>
+              <label class="select-qty-description" for="select-qty">Гостиниц на странице:</label>
+              <select class="select-control qty-control" name="qty" id="select-qty">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+              </select>
             </div>
           </div>
         </section>
