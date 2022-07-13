@@ -85,22 +85,22 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>
-
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
                     <span>Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking-space" checked>
-
+                    <input class="visually-hidden control-input" type="checkbox" name="parking-space" checked>
+                    <span class="control-mark"></span>
                     <span>Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
                     <span>Wi-Fi</span>
                   </label>
                 </li>
@@ -112,26 +112,54 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel"
+                      checked>
+                    <span class="control-mark"></span>
                     <span>Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="motel">
-
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                    <span class="control-mark"></span>
                     <span>Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="apartments">
-
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="apartments">
+                    <span class="control-mark"></span>
                     <span>Апартаменты</span>
                   </label>
                 </li>
               </ul>
+            </fieldset>
+
+            <fieldset class="catalog-filter-group group-price">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="price-inputs-container">
+                <label class="price-input-label">
+                  <input class="price-input price-input-min" type="number" name="min-price" value="0">
+                  <span class="price-input-text">от</span>
+                </label>
+                <label class="price-input-label">
+                  <input class="price-input price-input-max" type="number" name="max-price" value="9000">
+                  <span class="price-input-text">до</span>
+                </label>
+              </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
             </fieldset>
 
             <div class="catalog-filter-buttons">
@@ -144,13 +172,11 @@
         <section class="product-list-wrapper">
           <div class="sorting-container">
             <h2 class="sorting-title">Найдено гостиниц: 38</h2>
-            <div class="sorting-select-container">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="popular">Сначала популярные</option>
-              </select>
-            </div>
+            <select class="select-control select-by-type" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
             <ul class="card-view-list">
               <li class="card-view-item">
                 <a class="view-button view-button-table view-button-current" href="#">
@@ -264,14 +290,12 @@
             </ul>
 
             <div class="select-qty-container">
-              <label class="select-description" for="select-qty">Гостиниц на странице:</label>
-              <div class="inner-select-container">
-                <select class="qty-control" name="qty" id="select-qty">
-                  <option value="4">4</option>
-                  <option value="8">8</option>
-                  <option value="12">12</option>
-                </select>
-              </div>
+              <label class="select-qty-description" for="select-qty">Гостиниц на странице:</label>
+              <select class="select-control qty-control" name="qty" id="select-qty">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+              </select>
             </div>
           </div>
         </section>
