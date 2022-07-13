@@ -70,7 +70,6 @@
           <p class="intro-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
         <section class="advantages">
-          <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-city">
             <div class="advantages-item-wrapper">
               <h3 class="advantages-title">Настоящий городок</h3>
@@ -201,6 +200,78 @@
           <span class="visually-hidden">Логотип сайта HTML Academy</span>
         </a>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search-form">
+          <button class="modal-button-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="date-field">
+                <label class="modal-label" for="checkin">Дата заезда:</label>
+                <input class="modal-input" type="text" name="date-start" id="checkin" placeholder="27 апреля 2020"
+                  required="">
+                <p class="modal-text error-notification">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="date-field">
+                <label class="modal-label" for="checkout">Дата выезда:</label>
+                <input class="modal-input" type="text" name="date-end" id="checkout" placeholder="1 сентября 2021"
+                  required="">
+                <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="guest-counter">
+                <div class="adults-number">
+                  <label class="modal-label" for="adults">Взрослые:</label>
+                  <div class="qty-container">
+                    <input class="qty-input" type="text" name="adults-number" id="adults" placeholder="2" required>
+                    <button class="qty-minus" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <button class="qty-plus" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="children-number">
+                  <span class="modal-label label-modal-icon">
+                    <label class="modal-label" for="children">Дети:</label>
+                    <span class="modal-tooltip">
+                      <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
+                        <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor"
+                          aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor" />
+                          <g clip-path="url(#a)" fill="#fff">
+                            <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" />
+                          </g>
+                          <defs>
+                            <clipPath id="a">
+                              <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      <span class="tooltip-content" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                        будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <div class="qty-container">
+                    <input class="qty-input" type="text" name="children-number" id="children" placeholder="1"
+                      required="">
+                    <button class="qty-minus" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <button class="qty-plus" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="button button-b modal-button-search" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
